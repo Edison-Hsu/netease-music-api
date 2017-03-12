@@ -8,8 +8,11 @@ from api import NetEase
 class NeteaseMusicSearch:
     def on_get(self, req, resp):
         query = req.get_param('q', True)
+        limit = req.get_param_as_int('limit') or 60
+        offset = req.get_param_as_int('offset') or 0
         ne = NetEase()
-        resp.body = json.dumps(ne.search(query))
+        # 搜索单曲(1)，歌手(100)，专辑(10)，歌单(1000)，用户(1002) *(type)*
+        resp.body = json.dumps(ne.search(query, 1, offset, 'true', limit))
 
  
 class NeteaseMusicUrl:
