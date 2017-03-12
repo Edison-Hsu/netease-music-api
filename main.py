@@ -34,7 +34,7 @@ class NeteaseMusicDetails:
 
 
 api = falcon.API()
-api.add_route('/search', NeteaseMusicSearch())
+api.add_route('/songs/search', NeteaseMusicSearch())
 api.add_route('/songs/details', NeteaseMusicDetails())
 api.add_route('/songs/details/url', NeteaseMusicUrl())
 api.add_route('/songs/details/lyric', NeteaseMusicLyric())
