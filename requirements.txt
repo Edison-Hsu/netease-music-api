@@ -11,4 +11,4 @@ pycrypto==2.6.1
 python-mimeparse==1.6.0
 requests==2.13.0
 six==1.10.0
-Werkzeug==0.12
+Werkzeug==0.15.3
