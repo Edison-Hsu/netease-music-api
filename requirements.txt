@@ -4,7 +4,7 @@ falcon==1.1.0
 future==0.16.0
 gunicorn==19.7.0
 itsdangerous==0.24
-Jinja2==2.9.5
+Jinja2==2.11.3
 MarkupSafe==1.0
 NetEase-MusicBox==0.2.3.9
 pycrypto==2.6.1
